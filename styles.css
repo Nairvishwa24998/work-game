@@ -1,0 +1,89 @@
+.gametitle{
+font-family: 'Odibee Sans', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 250px;
+font-style: bold;
+text-align: center;
+color: #662525;
+}
+
+.characterselect{
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  font-style: bold;
+  text-align: center;
+  color: #662525;
+}
+
+.characterselectgame{
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  font-style: bold;
+  text-align: center;
+  color: #662525;
+}
+
+.gameinstructions{
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  font-style: bold;
+  text-align: center;
+  color: black;
+}
+
+.menuoptions{
+font-family: 'Odibee Sans', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 150px;
+font-style: bold;
+text-align: center;
+color: #662525;
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.life{
+  font-family: 'Odibee Sans', cursive;
+  font-size: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: green;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 768px;
+}
+
+.clockfont{
+  position: relative;
+  bottom: 75px;
+  right: 0px;
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  color: #F32A39;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+}
+
+.selected{
+  color: blue;
+}
+

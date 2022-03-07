@@ -7,14 +7,92 @@ let player1chosen = "";
 let player2chosen = "";
 
 // Image allotment
-const walkl = ["defaultmoves/Walk1l.png", "defaultmoves/Walk2l.png"];
-const walkr = ["defaultmoves/Walk1r.png", "defaultmoves/Walk2r.png"];
-const punchl = "defaultmoves/punchl.png";
-const punchr = "defaultmoves/punchr.png";
-const kickl = "defaultmoves/kickl.png"
-const kickr = "defaultmoves/kickr.png";
-const blockl = "defaultmoves/blockl.png";
-const blockr = "defaultmoves/blockr.png";
+let walkl = ["defaultmoves/Walk1l.png", "defaultmoves/Walk2l.png"];
+let walkr = ["defaultmoves/Walk1r.png", "defaultmoves/Walk2r.png"];
+let punchl = "defaultmoves/punchl.png";
+let punchr = "defaultmoves/punchr.png";
+let kickl = "defaultmoves/kickl.png"
+let kickr = "defaultmoves/kickr.png";
+let blockl = "defaultmoves/blockl.png";
+let blockr = "defaultmoves/blockr.png";
+
+const characterstore = 
+{
+    playerone: 
+    {
+        Ignis:
+        { 
+        walkright: ["charfiremoves/Walk1r.png","charfiremoves/Walk2r.png"], 
+        punchright: "charfiremoves/punchr.png",
+        kickright: "charfiremoves/kickr.png",
+        blockright: "charfiremoves/blockr.png"
+        },
+
+        Aqua:
+        { 
+        walkright: ["charwatermoves/Walk1r.png","charwatermoves/Walk2r.png"],
+        punchright: "charwatermoves/punchr.png",
+        kickright: "charwatermoves/kickr.png",
+        blockright: "charwatermoves/blockr.png"
+        },
+
+        Viridis:
+        { 
+        walkright: ["chargreenmoves/Walk1r.png","chargreenmoves/Walk2r.png"], 
+        punchright: "chargreenmoves/punchr.png",
+        kickright: "chargreenmoves/kickr.png",
+        blockright: "chargreenmoves/blockr.png"
+        },
+
+        Electrico:
+        { 
+        walkright: ["charelectricity/Walk1r.png","charelectricity/Walk2r.png"],
+        punchright: "charelectricitymoves/punchr.png",
+        kickright: "charelectricitymoves/kickr.png",
+        blockright: "charelectricitymoves/blockr.png"
+        }
+
+    },
+    playertwo: 
+    {
+        Ignis:
+        { 
+        walkleft: ["charfiremoves/Walk1l.png","charfiremoves/Walk2l.png"], 
+        punchleft: "charfiremoves/punchl.png",
+        kickleft: "charfiremoves/kickl.png",
+        blockleft: "charfiremoves/blockl.png"
+        },
+
+        Aqua:
+        { 
+        walkleft: ["charwatermoves/Walk1l.png","charwatermoves/Walk2l.png"], 
+        punchleft: "charwatermoves/punchl.png",
+        kickleft: "charwatermoves/kickl.png",
+        blockleft: "charwatermoves/blockl.png"
+        },
+
+        Viridis:
+        { 
+        walkleft: ["chargreenmoves/Walk1l.png","chargreenmoves/Walk2l.png"], 
+        punchleft: "chargreenmoves/punchl.png",
+        kickleft: "chargreenmoves/kickl.png",
+        blockleft: "chargreenmoves/blockl.png"
+        },
+
+        Electrico:
+        { 
+        walkleft: ["charelectricitymoves/Walk1l.png","charelectricitymoves/Walk2r.png"], 
+        punchleft: "charelectricitymoves/punchl.png",
+        kickleft: "charelectricitymoves/kickl.png",
+        blockleft: "charelectricitymoves/blockl.png"
+        }
+
+
+    },
+
+};
+
+
 
 // Remember to keep the timer here otherwise it would not reduce 
 let starttime = 180;
@@ -73,6 +151,18 @@ function characterchoose(id){
         player2.style.backgroundColor = "red";
         audi.play();
     }
+    // allotting moveset for player1
+    walkr = characterstore[playerone][player1chosen][walkright];
+    punchr = characterstore[playerone][player1chosen][punchright];
+    kickr = characterstore[playerone][player1chosen][kickright];
+    blockr = characterstore[playerone][player1chosen][blockright];
+
+    //allotting moveset for player2
+    walkl = characterstore[playertwo][player2chosen][walkleft];
+    punchl = characterstore[playertwo][player2chosen][punchleft];
+    kickl = characterstore[playertwo][player2chosen][kickleft];
+    blockl = characterstore[playertwo][player2chosen][blockleft];
+
 }
 
 
